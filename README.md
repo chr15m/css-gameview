@@ -2,6 +2,8 @@
 
 A simple CSS system for creating 2D game or scene layouts.
 
+![Example layout](./screenshot.png)
+
 `css-gameview` uses CSS custom properties to position, scale, and style elements (entities) within a container (view).
 
 Defaults to positioning sprites in the center of the screen.
