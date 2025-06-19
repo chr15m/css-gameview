@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-.cvg-entity {
+.cgv-entity {
   width: calc(var(--w) * 1vmin);
   height: calc(var(--h) * 1vmin);
   transform: translate(calc(var(--ox) * 1vmin), calc(var(--oy) * -1vmin)) translate3d(calc(var(--x) * 1vmin), calc(var(--y) * -1vmin), var(--z)) scale(var(--s)) scale(var(--sx), var(--sy)) rotate(var(--r));
