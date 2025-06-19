@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>Tiny Web Game Engine</title>
+    <title>CSS Game View</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
@@ -9,11 +9,20 @@
       html, body, main {
         height: 100%; width: 100%; margin: 0px; overflow: hidden; background-color: #252924; color: #CFD4CE; font-family: Arial, Helvetica, sans-serif;
       }
+      #indicator {
+        border: 1px solid red;
+        width: 10vmin;
+        height: 10vmin;
+        position: absolute;
+        box-sizing: border-box;
+      }
     </style>
-    <link href="twge.css" rel="stylesheet" />
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAARElEQVQYV2NkAIJnLx79B9HoQEpCjpERJmmoZ4Iif/7SGTAfrAAkCROAqYKJoSiACcJMA2kizQRkR6BYAZLA6UhC3gQAz8g/I+G+ewIAAAAASUVORK5CYII=">
+    <link href="cgv.css" rel="stylesheet" />
+    <link
+        rel="icon"
+        href="https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/1f47b.png">
     <!-- meta tags -->
-    <meta name="description" content="A tiny web game engine.">
+    <meta name="description" content="CSS game view.">
     <!-- twitter card meta tags -->
     <meta name="twitter:card" value="summary">
     <!-- open graph data
@@ -21,9 +30,20 @@
     <!-- <meta property="og:image" content="https://yoursite.com/your/game/image.jpg" /> -->
   </head>
   <body>
-    <main class="twge" id="twge-default">
-      <div class="loader"></div>
+    <main class="cgv" style="--size: 10;">
+      <!-- <div id="indicator"></div> -->
+      <img
+          src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f47b.svg"
+          class="cvg-entity"
+          style="--x: 0; --y: 0; --w: 1; --h: 1;">
+      <img
+          src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f332.svg"
+          class="cvg-entity"
+          style="--x: -2; --y: 0.5; --w: 1; --h: 1;">
+      <img
+          src="https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f332.svg"
+          class="cvg-entity"
+          style="--x: 2.5; --y: -0.5; --w: 0.9; --h: 0.9; --r: 5deg;">
     </main>
   </body>
-  <script src="game.js" type="module"></script>
 </html>
